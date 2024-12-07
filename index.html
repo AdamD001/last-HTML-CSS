@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Серия BMW M5</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">BMW M5 Series</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#models">Модели</a></li>
+                <li><a href="#history">История</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="cta-button" onclick="window.location.href='#contact'">Записаться на Тест-Драйв</button>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            
+            <h1>Раскройте Зверя</h1>
+            <p>Мощь, Скорость, Стиль</p>
+            <button class="cta-button" onclick="window.location.href='#home'">Узнать Больше</button>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models" class="models">
+        <h2>Модели BMW M5</h2>
+        <div class="model-cards">
+            <div class="model-card">
+                <img src="./img/modell1.jpeg" alt="BMW M5 Competition">
+                <h3>BMW M5</h3>
+                <p>Модель: F90</p>
+                <p>Мощь: 600 л.с.</p>
+                <p>Цена: $100,000</p>
+                <button class="info-button" onclick="showInfo('competition')">Подробнее</button>
+                <div id="competition" class="model-info">
+                    <p>Кузов: Седан</p>
+                    <p>Разгон до 100 км/ч: 3.4 сек</p>
+                    <p>Максимальная Скорость: 305 км/ч</p>
+                </div>
+            </div>
+            <div class="model-card">
+                <img src="./img/modell2.jpeg" alt="BMW M5 Standard">
+                <h3>BMW M5 Competition</h3>
+                <p>Модель: F90</p>
+                <p>Мощь: 625 л.с.</p>
+                <p>Цена: $115,000</p>
+                <button class="info-button" onclick="showInfo('standard')">Подробнее</button>
+                <div id="standard" class="model-info">
+                    <p>Кузов: Седан</p>
+                    <p>Разгон до 100 км/ч: 3.3 сек</p>
+                    <p>Максимальная Скорость: 310 км/ч</p>
+                </div>
+            </div>
+            <div class="model-card">
+                <img src="./img/modell3.jpeg" alt="BMW M5 Touring">
+                <h3>BMW M5 Competition M Special</h3>
+                <p>Модель: F90</p>
+                <p>Мощь: 625 л.с.</p>
+                <p>Цена: $130,000</p>
+                <button class="info-button" onclick="showInfo('touring')">Подробнее</button>
+                <div id="touring" class="model-info">
+                    <p>Кузов: Седан</p>
+                    <p>Разгон до 100 км/ч: 3.3 сек</p>
+                    <p>Максимальная Скорость: 315 км/ч</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="history">
+        <h2>История BMW</h2>
+        <div class="history-timeline">
+            <div class="history-item">
+                <img src="./img/modell4.jpeg">
+                <h3>1916: Основание BMW</h3>
+                <p>BMW была основана Карлом Раппом и Густавом Отто в Мюнхене, Германия.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell5.jpeg">
+                <h3>1923: Первый мотоцикл BMW</h3>
+                <p>Выпуск первого мотоцикла BMW R 32 с горизонтально-оппозитным двигателем.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell6.jpeg">
+                <h3>1928: Первый автомобиль BMW</h3>
+                <p>BMW приобрела компанию Dixi и начала производство автомобилей.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell7.jpeg">
+                <h3>1936: BMW 328</h3>
+                <p>Выпуск BMW 328, которая стала легендой в мире автоспорта.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell8.jpeg">
+                <h3>1951: Возвращение в автомобильный бизнес</h3>
+                <p>BMW возвращается в автомобильный бизнес с моделью 501.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell9.jpeg">
+                <h3>1972: Основание подразделения BMW M</h3>
+                <p>Основание подразделения BMW M для разработки спортивных автомобилей.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell10.jpeg">
+                <h3>1984: Первое поколение BMW M5</h3>
+                <p>Выпуск первого поколения BMW M5 с двигателем M88/3 мощностью 286 л.с.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell11.jpeg">
+                <h3>1988: BMW M5 E34</h3>
+                <p>Второе поколение с двигателем S38B36 мощностью 315 л.с.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell12.jpeg">
+                <h3>1998: BMW M5 E39</h3>
+                <p>Третье поколение с двигателем S62B50 мощностью 400 л.с.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell13.jpeg">
+                <h3>2005: BMW M5 E60</h3>
+                <p>Четвертое поколение с двигателем S85B50 мощностью 507 л.с.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell14.jpeg">
+                <h3>2011: BMW M5 F10</h3>
+                <p>Пятое поколение с двигателем S63B44TÜ мощностью 560 л.с.</p>
+            </div>
+            <div class="history-item">
+                <img src="./img/modell15.jpeg">
+                <h3>2017: BMW M5 F90</h3>
+                <p>Шестое поколение с двигателем S63B44T4 мощностью 600 л.с.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="./img/modell16.jpeg" alt="BMW M5 E28">
+                <div class="gallery-info">
+                    <h3>BMW M5 E28</h3>
+                    <p>Модель: E28</p>
+                    <p>Мощь: 286 л.с.</p>
+                    <p>Разгон до 100 км/ч: 6.5 сек</p>
+                    <p>Максимальная Скорость: 245 км/ч</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/modell17.jpeg" alt="BMW M5 E34">
+                <div class="gallery-info">
+                    <h3>BMW M5 E34</h3>
+                    <p>Модель: E34</p>
+                    <p>Мощь: 315 л.с.</p>
+                    <p>Разгон до 100 км/ч: 6.3 сек</p>
+                    <p>Максимальная Скорость: 250 км/ч</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/modell18.jpeg" alt="BMW M5 E39">
+                <div class="gallery-info">
+                    <h3>BMW M5 E39</h3>
+                    <p>Модель: E39</p>
+                    <p>Мощь: 400 л.с.</p>
+                    <p>Разгон до 100 км/ч: 5.3 сек</p>
+                    <p>Максимальная Скорость: 250 км/ч</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/modell19.jpeg" alt="BMW M5 E60">
+                <div class="gallery-info">
+                    <h3>BMW M5 E60</h3>
+                    <p>Модель: E60</p>
+                    <p>Мощь: 507 л.с.</p>
+                    <p>Разгон до 100 км/ч: 4.7 сек</p>
+                    <p>Максимальная Скорость: 250 км/ч</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/modell20.jpeg" alt="BMW M5 F10">
+                <div class="gallery-info">
+                    <h3>BMW M5 F10</h3>
+                    <p>Модель: F10</p>
+                    <p>Мощь: 560 л.с.</p>
+                    <p>Разгон до 100 км/ч: 4.4 сек</p>
+                    <p>Максимальная Скорость: 250 км/ч</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/modell21.jpeg" alt="BMW M5 F90">
+                <div class="gallery-info">
+                    <h3>BMW M5 F90</h3>
+                    <p>Модель: F90</p>
+                    <p>Мощь: 600 л.с.</p>
+                    <p>Разгон до 100 км/ч: 3.4 сек</p>
+                    <p>Максимальная Скорость: 305 км/ч</p>
+                </div>
+            </div>
+            <!-- <div class="gallery-item">
+                <img src="./img/modell22.jpeg" alt="BMW M5 F90 Competition">
+                <div class="gallery-info">
+                    <h3>BMW M5 F90 Competition</h3>
+                    <p>Модель: F90</p>
+                    <p>Мощь: 625 л.с.</p>
+                    <p>Разгон до 100 км/ч: 3.3 сек</p>
+                    <p>Максимальная Скорость: 305 км/ч</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Свяжитесь с Нами</h2>
+        <form>
+            <input type="text" placeholder="Имя" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Сообщение" required></textarea>
+            <button type="submit" class="cta-button">Отправить</button>
+        </form>
+        <div class="contact-info">
+            <p>Адрес: г. Назрань, ул. Заводская 10 (ITHUB)</p>
+            <p>Телефон: +7 (962) 643-22-22</p>
+            <p>Email: info@magas.ithub.ru</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo">BMW M5 Series</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#models">Модели</a></li>
+                <li><a href="#history">История</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2023 BMW M5 Series. Все права защищены.</p>
+    </footer>
+
+    <script src="js/js/main.js"></script>
+</body>
+</html>
